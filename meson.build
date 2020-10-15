@@ -84,6 +84,7 @@ libwpe = library('wpe-' + api_version,
 	'src/renderer-host.c',
 	'src/version.c',
 	'src/view-backend.c',
+	'src/gamepad.c',
 	install: true,
 	dependencies: dependencies,
 	version: soversion,
@@ -103,6 +104,7 @@ api_headers = [
 	'include/wpe/view-backend.h',
 	'include/wpe/wpe-egl.h',
 	'include/wpe/wpe.h',
+	'include/wpe/gamepad.h',
 
 	# Generated API headers.
 	configure_file(
