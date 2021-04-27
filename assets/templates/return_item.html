@@ -1,0 +1,24 @@
+@require(return_item)
+
+<div class="symbol-detail">
+	<div>
+		@if return_item.name:
+		<i><em><code>@return_item.name</code></em></i>
+		@end
+		\
+		@if (return_item.formatted_link or return_item.extension_contents):
+			(
+			@return_item.formatted_link
+			@for name, ex in return_item.extension_contents.items():
+			@ex
+			@end
+			)
+		@end
+		–
+	</div>
+	@if return_item.formatted_doc:
+		@return_item.formatted_doc
+	@else:
+		<i>No description available</i>
+	@end
+</div>

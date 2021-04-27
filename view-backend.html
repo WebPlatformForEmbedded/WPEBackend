@@ -1,0 +1,1515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<base href=".">
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<title>View Backend</title>
+
+<link rel="stylesheet" href="assets/css/custom_bootstrap.css" type="text/css">
+<link rel="stylesheet" href="assets/css/bootstrap-toc.min.css" type="text/css">
+<link rel="stylesheet" href="assets/css/frontend.css" type="text/css">
+<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+
+<link rel="stylesheet" href="assets/css/prism-tomorrow.css" type="text/css">
+
+<script src="assets/js/mustache.min.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/scrollspy.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/typeahead.jquery.min.js"></script>
+<script src="assets/js/search.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/compare-versions.js"></script>
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/bootstrap-toc.min.js"></script>
+<script src="assets/js/jquery.touchSwipe.min.js"></script>
+<script src="assets/js/anchor.min.js"></script>
+<script src="assets/js/tag_filtering.js"></script>
+<script src="assets/js/language_switching.js"></script>
+
+<script src="assets/js/lines_around_headings.js"></script>
+
+<script src="assets/js/trie.js"></script>
+<script src="assets/js/prism-core.js"></script>
+<script src="assets/js/prism-autoloader.js"></script>
+<script src="assets/js/prism_autoloader_path_override.js"></script>
+
+
+</head>
+
+<body class="no-script
+" data-spy="scroll" data-target="#toc" data-offset="70">
+
+<script>
+$('body').removeClass('no-script');
+</script>
+
+<nav class="navbar navbar-fixed-top navbar-default" id="topnav">
+	<div class="container-fluid">
+		<div class="navbar-right">
+			<a id="toc-toggle">
+				<span class="glyphicon glyphicon-menu-right"></span>
+				<span class="glyphicon glyphicon-menu-left"></span>
+			</a>
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-wrapper" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<form class="navbar-form pull-right" id="navbar-search-form">
+                               <div class="form-group has-feedback">
+                                       <input type="text" class="form-control input-sm" name="search" id="sidenav-lookup-field" placeholder="search" disabled>
+				       <span class="glyphicon glyphicon-search form-control-feedback" id="search-mgn-glass"></span>
+                               </div>
+                        </form>
+		</div>
+		<div class="navbar-header">
+			<a id="sidenav-toggle">
+				<span class="glyphicon glyphicon-menu-right"></span>
+				<span class="glyphicon glyphicon-menu-left"></span>
+			</a>
+			<a id="home-link" href="index.html" class="hotdoc-navbar-brand">
+				<img src="assets/images/home.svg" alt="Home">
+			</a>
+		</div>
+		<div class="navbar-collapse collapse" id="navbar-wrapper">
+			<ul class="nav navbar-nav" id="menu">
+							</ul>
+			<div class="hidden-xs hidden-sm navbar-text navbar-center">
+							</div>
+		</div>
+	</div>
+</nav>
+
+<main>
+<div data-extension="c-extension" data-hotdoc-in-toplevel="True" data-hotdoc-project="libwpe-1.0" data-hotdoc-ref="view-backend.html" class="page_container" id="page-wrapper">
+<script src="assets/js/utils.js"></script>
+
+<div class="panel panel-collapse oc-collapsed" id="sidenav" data-hotdoc-role="navigation">
+	<script src="assets/js/navigation.js"></script>
+	<script src="assets/js/sitemap.js"></script>
+</div>
+
+<div id="body">
+	<div id="main">
+				    <div id="page-description" data-hotdoc-role="main">
+        <h1 id="view-backend-page">View Backend</h1>
+    </div>
+        
+
+            <h2 class="symbol_section">Functions</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="wpe_view_backend_add_activity_state">
+	
+
+
+
+<h3 data-hotdoc-id="wpe_view_backend_add_activity_state">
+	<i>wpe_view_backend_add_activity_state</i>
+</h3>
+
+
+
+
+<pre class="c-prototype language-c">
+void 
+wpe_view_backend_add_activity_state (struct wpe_view_backend * ,
+                                     uint32_t )</pre>
+
+
+
+
+	<div class="parameters-container">
+		<p><b>Parameters:</b></p>
+					
+<div class="symbol-detail">
+	<div>
+		<i><em><code></code></em></i>
+				–
+	</div>
+			<i>No description available</i>
+	</div>
+
+					
+<div class="symbol-detail">
+	<div>
+		<i><em><code></code></em></i>
+				–
+	</div>
+			<i>No description available</i>
+	</div>
+
+			</div>
+
+		<div class="return-values-container">
+		<div class="symbol-detail">
+			<div>
+				<b>Returns</b>
+									(
+					void 
+										)
+								–
+			</div>
+							<i>No description available</i>
+					</div>
+	</div>
+
+
+
+
+
+<hr>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="wpe_view_backend_create">
+	
+
+
+
+<h3 data-hotdoc-id="wpe_view_backend_create">
+	<i>wpe_view_backend_create</i>
+</h3>
+
+
+
+
+<pre class="c-prototype language-c">
+struct wpe_view_backend *
+wpe_view_backend_create ()</pre>
+
+
+
+
+
+		<div class="return-values-container">
+		<div class="symbol-detail">
+			<div>
+				<b>Returns</b>
+									(
+					struct wpe_view_backend *
+										)
+								–
+			</div>
+							<i>No description available</i>
+					</div>
+	</div>
+
+
+
+
+
+<hr>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="wpe_view_backend_create_with_backend_interface">
+	
+
+
+
+<h3 data-hotdoc-id="wpe_view_backend_create_with_backend_interface">
+	<i>wpe_view_backend_create_with_backend_interface</i>
+</h3>
+
+
+
+
+<pre class="c-prototype language-c">
+struct wpe_view_backend *
+wpe_view_backend_create_with_backend_interface (struct wpe_view_backend_interface * ,
+                                                void * )</pre>
+
+
+
+
+	<div class="parameters-container">
+		<p><b>Parameters:</b></p>
+					
+<div class="symbol-detail">
+	<div>
+		<i><em><code></code></em></i>
+				–
+	</div>
+			<i>No description available</i>
+	</div>
+
+					
+<div class="symbol-detail">
+	<div>
+		<i><em><code></code></em></i>
+				–
+	</div>
+			<i>No description available</i>
+	</div>
+
+			</div>
+
+		<div class="return-values-container">
+		<div class="symbol-detail">
+			<div>
+				<b>Returns</b>
+									(
+					struct wpe_view_backend *
+										)
+								–
+			</div>
+							<i>No description available</i>
+					</div>
+	</div>
+
+
+
+
+
+<hr>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="wpe_view_backend_destroy">
+	
+
+
+
+<h3 data-hotdoc-id="wpe_view_backend_destroy">
+	<i>wpe_view_backend_destroy</i>
+</h3>
+
+
+
+
+<pre class="c-prototype language-c">
+void 
+wpe_view_backend_destroy (struct wpe_view_backend * )</pre>
+
+
+
+
+	<div class="parameters-container">
+		<p><b>Parameters:</b></p>
+					
+<div class="symbol-detail">
+	<div>
+		<i><em><code></code></em></i>
+				–
+	</div>
+			<i>No description available</i>
+	</div>
+
+			</div>
+
+		<div class="return-values-container">
+		<div class="symbol-detail">
+			<div>
+				<b>Returns</b>
+									(
+					void 
+										)
+								–
+			</div>
+							<i>No description available</i>
+					</div>
+	</div>
+
+
+
+
+
+<hr>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="wpe_view_backend_dispatch_axis_event">
+	
+
+
+
+<h3 data-hotdoc-id="wpe_view_backend_dispatch_axis_event">
+	<i>wpe_view_backend_dispatch_axis_event</i>
+</h3>
+
+
+
+
+<pre class="c-prototype language-c">
+void 
+wpe_view_backend_dispatch_axis_event (struct wpe_view_backend * ,
+                                      struct wpe_input_axis_event * )</pre>
+
+
+
+
+	<div class="parameters-container">
+		<p><b>Parameters:</b></p>
+					
+<div class="symbol-detail">
+	<div>
+		<i><em><code></code></em></i>
+				–
+	</div>
+			<i>No description available</i>
+	</div>
+
+					
+<div class="symbol-detail">
+	<div>
+		<i><em><code></code></em></i>
+				–
+	</div>
+			<i>No description available</i>
+	</div>
+
+			</div>
+
+		<div class="return-values-container">
+		<div class="symbol-detail">
+			<div>
+				<b>Returns</b>
+									(
+					void 
+										)
+								–
+			</div>
+							<i>No description available</i>
+					</div>
+	</div>
+
+
+
+
+
+<hr>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="wpe_view_backend_dispatch_frame_displayed">
+	
+
+
+
+<h3 data-hotdoc-id="wpe_view_backend_dispatch_frame_displayed">
+	<i>wpe_view_backend_dispatch_frame_displayed</i>
+</h3>
+
+
+
+
+<pre class="c-prototype language-c">
+void 
+wpe_view_backend_dispatch_frame_displayed (struct wpe_view_backend * )</pre>
+
+
+
+
+	<div class="parameters-container">
+		<p><b>Parameters:</b></p>
+					
+<div class="symbol-detail">
+	<div>
+		<i><em><code></code></em></i>
+				–
+	</div>
+			<i>No description available</i>
+	</div>
+
+			</div>
+
+		<div class="return-values-container">
+		<div class="symbol-detail">
+			<div>
+				<b>Returns</b>
+									(
+					void 
+										)
+								–
+			</div>
+							<i>No description available</i>
+					</div>
+	</div>
+
+
+
+
+
+<hr>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="wpe_view_backend_dispatch_get_accessible">
+	
+
+
+
+<h3 data-hotdoc-id="wpe_view_backend_dispatch_get_accessible">
+	<i>wpe_view_backend_dispatch_get_accessible</i>
+</h3>
+
+
+
+
+<pre class="c-prototype language-c">
+void *
+wpe_view_backend_dispatch_get_accessible (struct wpe_view_backend * backend)</pre>
+
+
+
+
+	<div class="parameters-container">
+		<p><b>Parameters:</b></p>
+					
+<div class="symbol-detail">
+	<div>
+		<i><em><code>backend</code></em></i>
+				–
+	</div>
+			<i>No description available</i>
+	</div>
+
+			</div>
+
+		<div class="return-values-container">
+		<div class="symbol-detail">
+			<div>
+				<b>Returns</b>
+									(
+					void *
+										)
+								–
+			</div>
+							<i>No description available</i>
+					</div>
+	</div>
+
+
+
+
+
+<hr>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="wpe_view_backend_dispatch_keyboard_event">
+	
+
+
+
+<h3 data-hotdoc-id="wpe_view_backend_dispatch_keyboard_event">
+	<i>wpe_view_backend_dispatch_keyboard_event</i>
+</h3>
+
+
+
+
+<pre class="c-prototype language-c">
+void 
+wpe_view_backend_dispatch_keyboard_event (struct wpe_view_backend * ,
+                                          struct wpe_input_keyboard_event * )</pre>
+
+
+
+
+	<div class="parameters-container">
+		<p><b>Parameters:</b></p>
+					
+<div class="symbol-detail">
+	<div>
+		<i><em><code></code></em></i>
+				–
+	</div>
+			<i>No description available</i>
+	</div>
+
+					
+<div class="symbol-detail">
+	<div>
+		<i><em><code></code></em></i>
+				–
+	</div>
+			<i>No description available</i>
+	</div>
+
+			</div>
+
+		<div class="return-values-container">
+		<div class="symbol-detail">
+			<div>
+				<b>Returns</b>
+									(
+					void 
+										)
+								–
+			</div>
+							<i>No description available</i>
+					</div>
+	</div>
+
+
+
+
+
+<hr>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="wpe_view_backend_dispatch_pointer_event">
+	
+
+
+
+<h3 data-hotdoc-id="wpe_view_backend_dispatch_pointer_event">
+	<i>wpe_view_backend_dispatch_pointer_event</i>
+</h3>
+
+
+
+
+<pre class="c-prototype language-c">
+void 
+wpe_view_backend_dispatch_pointer_event (struct wpe_view_backend * ,
+                                         struct wpe_input_pointer_event * )</pre>
+
+
+
+
+	<div class="parameters-container">
+		<p><b>Parameters:</b></p>
+					
+<div class="symbol-detail">
+	<div>
+		<i><em><code></code></em></i>
+				–
+	</div>
+			<i>No description available</i>
+	</div>
+
+					
+<div class="symbol-detail">
+	<div>
+		<i><em><code></code></em></i>
+				–
+	</div>
+			<i>No description available</i>
+	</div>
+
+			</div>
+
+		<div class="return-values-container">
+		<div class="symbol-detail">
+			<div>
+				<b>Returns</b>
+									(
+					void 
+										)
+								–
+			</div>
+							<i>No description available</i>
+					</div>
+	</div>
+
+
+
+
+
+<hr>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="wpe_view_backend_dispatch_set_device_scale_factor">
+	
+
+
+
+<h3 data-hotdoc-id="wpe_view_backend_dispatch_set_device_scale_factor">
+	<i>wpe_view_backend_dispatch_set_device_scale_factor</i>
+</h3>
+
+
+
+
+<pre class="c-prototype language-c">
+void 
+wpe_view_backend_dispatch_set_device_scale_factor (struct wpe_view_backend * ,
+                                                   float  )</pre>
+
+
+
+
+	<div class="parameters-container">
+		<p><b>Parameters:</b></p>
+					
+<div class="symbol-detail">
+	<div>
+		<i><em><code></code></em></i>
+				–
+	</div>
+			<i>No description available</i>
+	</div>
+
+					
+<div class="symbol-detail">
+	<div>
+		<i><em><code></code></em></i>
+				–
+	</div>
+			<i>No description available</i>
+	</div>
+
+			</div>
+
+		<div class="return-values-container">
+		<div class="symbol-detail">
+			<div>
+				<b>Returns</b>
+									(
+					void 
+										)
+								–
+			</div>
+							<i>No description available</i>
+					</div>
+	</div>
+
+
+
+
+
+<hr>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="wpe_view_backend_dispatch_set_size">
+	
+
+
+
+<h3 data-hotdoc-id="wpe_view_backend_dispatch_set_size">
+	<i>wpe_view_backend_dispatch_set_size</i>
+</h3>
+
+
+
+
+<pre class="c-prototype language-c">
+void 
+wpe_view_backend_dispatch_set_size (struct wpe_view_backend * ,
+                                    uint32_t ,
+                                    uint32_t )</pre>
+
+
+
+
+	<div class="parameters-container">
+		<p><b>Parameters:</b></p>
+					
+<div class="symbol-detail">
+	<div>
+		<i><em><code></code></em></i>
+				–
+	</div>
+			<i>No description available</i>
+	</div>
+
+					
+<div class="symbol-detail">
+	<div>
+		<i><em><code></code></em></i>
+				–
+	</div>
+			<i>No description available</i>
+	</div>
+
+					
+<div class="symbol-detail">
+	<div>
+		<i><em><code></code></em></i>
+				–
+	</div>
+			<i>No description available</i>
+	</div>
+
+			</div>
+
+		<div class="return-values-container">
+		<div class="symbol-detail">
+			<div>
+				<b>Returns</b>
+									(
+					void 
+										)
+								–
+			</div>
+							<i>No description available</i>
+					</div>
+	</div>
+
+
+
+
+
+<hr>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="wpe_view_backend_dispatch_touch_event">
+	
+
+
+
+<h3 data-hotdoc-id="wpe_view_backend_dispatch_touch_event">
+	<i>wpe_view_backend_dispatch_touch_event</i>
+</h3>
+
+
+
+
+<pre class="c-prototype language-c">
+void 
+wpe_view_backend_dispatch_touch_event (struct wpe_view_backend * ,
+                                       struct wpe_input_touch_event * )</pre>
+
+
+
+
+	<div class="parameters-container">
+		<p><b>Parameters:</b></p>
+					
+<div class="symbol-detail">
+	<div>
+		<i><em><code></code></em></i>
+				–
+	</div>
+			<i>No description available</i>
+	</div>
+
+					
+<div class="symbol-detail">
+	<div>
+		<i><em><code></code></em></i>
+				–
+	</div>
+			<i>No description available</i>
+	</div>
+
+			</div>
+
+		<div class="return-values-container">
+		<div class="symbol-detail">
+			<div>
+				<b>Returns</b>
+									(
+					void 
+										)
+								–
+			</div>
+							<i>No description available</i>
+					</div>
+	</div>
+
+
+
+
+
+<hr>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="wpe_view_backend_get_activity_state">
+	
+
+
+
+<h3 data-hotdoc-id="wpe_view_backend_get_activity_state">
+	<i>wpe_view_backend_get_activity_state</i>
+</h3>
+
+
+
+
+<pre class="c-prototype language-c">
+uint32_t
+wpe_view_backend_get_activity_state (struct wpe_view_backend * )</pre>
+
+
+
+
+	<div class="parameters-container">
+		<p><b>Parameters:</b></p>
+					
+<div class="symbol-detail">
+	<div>
+		<i><em><code></code></em></i>
+				–
+	</div>
+			<i>No description available</i>
+	</div>
+
+			</div>
+
+		<div class="return-values-container">
+		<div class="symbol-detail">
+			<div>
+				<b>Returns</b>
+									(
+					uint32_t
+										)
+								–
+			</div>
+							<i>No description available</i>
+					</div>
+	</div>
+
+
+
+
+
+<hr>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="wpe_view_backend_get_renderer_host_fd">
+	
+
+
+
+<h3 data-hotdoc-id="wpe_view_backend_get_renderer_host_fd">
+	<i>wpe_view_backend_get_renderer_host_fd</i>
+</h3>
+
+
+
+
+<pre class="c-prototype language-c">
+int 
+wpe_view_backend_get_renderer_host_fd (struct wpe_view_backend * )</pre>
+
+
+
+
+	<div class="parameters-container">
+		<p><b>Parameters:</b></p>
+					
+<div class="symbol-detail">
+	<div>
+		<i><em><code></code></em></i>
+				–
+	</div>
+			<i>No description available</i>
+	</div>
+
+			</div>
+
+		<div class="return-values-container">
+		<div class="symbol-detail">
+			<div>
+				<b>Returns</b>
+									(
+					int 
+										)
+								–
+			</div>
+							<i>No description available</i>
+					</div>
+	</div>
+
+
+
+
+
+<hr>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="wpe_view_backend_initialize">
+	
+
+
+
+<h3 data-hotdoc-id="wpe_view_backend_initialize">
+	<i>wpe_view_backend_initialize</i>
+</h3>
+
+
+
+
+<pre class="c-prototype language-c">
+void 
+wpe_view_backend_initialize (struct wpe_view_backend * )</pre>
+
+
+
+
+	<div class="parameters-container">
+		<p><b>Parameters:</b></p>
+					
+<div class="symbol-detail">
+	<div>
+		<i><em><code></code></em></i>
+				–
+	</div>
+			<i>No description available</i>
+	</div>
+
+			</div>
+
+		<div class="return-values-container">
+		<div class="symbol-detail">
+			<div>
+				<b>Returns</b>
+									(
+					void 
+										)
+								–
+			</div>
+							<i>No description available</i>
+					</div>
+	</div>
+
+
+
+
+
+<hr>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="wpe_view_backend_remove_activity_state">
+	
+
+
+
+<h3 data-hotdoc-id="wpe_view_backend_remove_activity_state">
+	<i>wpe_view_backend_remove_activity_state</i>
+</h3>
+
+
+
+
+<pre class="c-prototype language-c">
+void 
+wpe_view_backend_remove_activity_state (struct wpe_view_backend * ,
+                                        uint32_t )</pre>
+
+
+
+
+	<div class="parameters-container">
+		<p><b>Parameters:</b></p>
+					
+<div class="symbol-detail">
+	<div>
+		<i><em><code></code></em></i>
+				–
+	</div>
+			<i>No description available</i>
+	</div>
+
+					
+<div class="symbol-detail">
+	<div>
+		<i><em><code></code></em></i>
+				–
+	</div>
+			<i>No description available</i>
+	</div>
+
+			</div>
+
+		<div class="return-values-container">
+		<div class="symbol-detail">
+			<div>
+				<b>Returns</b>
+									(
+					void 
+										)
+								–
+			</div>
+							<i>No description available</i>
+					</div>
+	</div>
+
+
+
+
+
+<hr>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="wpe_view_backend_set_backend_client">
+	
+
+
+
+<h3 data-hotdoc-id="wpe_view_backend_set_backend_client">
+	<i>wpe_view_backend_set_backend_client</i>
+</h3>
+
+
+
+
+<pre class="c-prototype language-c">
+void 
+wpe_view_backend_set_backend_client (struct wpe_view_backend * ,
+                                     const struct wpe_view_backend_client * ,
+                                     void * )</pre>
+
+
+
+
+	<div class="parameters-container">
+		<p><b>Parameters:</b></p>
+					
+<div class="symbol-detail">
+	<div>
+		<i><em><code></code></em></i>
+				–
+	</div>
+			<i>No description available</i>
+	</div>
+
+					
+<div class="symbol-detail">
+	<div>
+		<i><em><code></code></em></i>
+				–
+	</div>
+			<i>No description available</i>
+	</div>
+
+					
+<div class="symbol-detail">
+	<div>
+		<i><em><code></code></em></i>
+				–
+	</div>
+			<i>No description available</i>
+	</div>
+
+			</div>
+
+		<div class="return-values-container">
+		<div class="symbol-detail">
+			<div>
+				<b>Returns</b>
+									(
+					void 
+										)
+								–
+			</div>
+							<i>No description available</i>
+					</div>
+	</div>
+
+
+
+
+
+<hr>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="wpe_view_backend_set_input_client">
+	
+
+
+
+<h3 data-hotdoc-id="wpe_view_backend_set_input_client">
+	<i>wpe_view_backend_set_input_client</i>
+</h3>
+
+
+
+
+<pre class="c-prototype language-c">
+void 
+wpe_view_backend_set_input_client (struct wpe_view_backend * ,
+                                   const struct wpe_view_backend_input_client * ,
+                                   void * )</pre>
+
+
+
+
+	<div class="parameters-container">
+		<p><b>Parameters:</b></p>
+					
+<div class="symbol-detail">
+	<div>
+		<i><em><code></code></em></i>
+				–
+	</div>
+			<i>No description available</i>
+	</div>
+
+					
+<div class="symbol-detail">
+	<div>
+		<i><em><code></code></em></i>
+				–
+	</div>
+			<i>No description available</i>
+	</div>
+
+					
+<div class="symbol-detail">
+	<div>
+		<i><em><code></code></em></i>
+				–
+	</div>
+			<i>No description available</i>
+	</div>
+
+			</div>
+
+		<div class="return-values-container">
+		<div class="symbol-detail">
+			<div>
+				<b>Returns</b>
+									(
+					void 
+										)
+								–
+			</div>
+							<i>No description available</i>
+					</div>
+	</div>
+
+
+
+
+
+<hr>
+
+</div>
+
+
+            <h2 class="symbol_section">Structures</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="wpe_view_backend">
+	
+
+
+
+<h3 data-hotdoc-id="wpe_view_backend">
+	<i>wpe_view_backend</i>
+</h3>
+
+
+
+
+
+
+
+<hr>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="wpe_view_backend_base">
+	
+
+
+
+<h3 data-hotdoc-id="wpe_view_backend_base">
+	<i>wpe_view_backend_base</i>
+</h3>
+
+
+<pre class="raw_code">
+struct wpe_view_backend_base {
+    const struct wpe_view_backend_interface* interface;
+    void* interface_data;
+};
+</pre>
+
+
+
+
+	<div class="members-container">
+		<h4>Fields</h4>
+					
+<div class="symbol-detail" data-hotdoc-id="wpe_view_backend_base.interface">
+	<div>
+		<i><em><code>interface</code></em></i>
+		(const struct wpe_view_backend_interface *)
+		–
+	</div>
+			<i>No description available</i>
+	</div>
+
+					
+<div class="symbol-detail" data-hotdoc-id="wpe_view_backend_base.interface_data">
+	<div>
+		<i><em><code>interface_data</code></em></i>
+		(void *)
+		–
+	</div>
+			<i>No description available</i>
+	</div>
+
+			</div>
+
+
+
+<hr>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="wpe_view_backend_client">
+	
+
+
+
+<h3 data-hotdoc-id="wpe_view_backend_client">
+	<i>wpe_view_backend_client</i>
+</h3>
+
+
+
+
+
+
+
+<hr>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="wpe_view_backend_input_client">
+	
+
+
+
+<h3 data-hotdoc-id="wpe_view_backend_input_client">
+	<i>wpe_view_backend_input_client</i>
+</h3>
+
+
+
+
+
+
+
+<hr>
+
+</div>
+
+            
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="wpe_view_backend_interface">
+	
+
+
+
+<h3 data-hotdoc-id="wpe_view_backend_interface">
+	<i>wpe_view_backend_interface</i>
+</h3>
+
+
+<pre class="raw_code">
+struct wpe_view_backend_interface {
+    void* (*create)(void*, struct wpe_view_backend*);
+    void (*destroy)(void*);
+
+    void (*initialize)(void*);
+    int (*get_renderer_host_fd)(void*);
+
+};
+</pre>
+
+
+
+
+	<div class="members-container">
+		<h4>Fields</h4>
+					
+<div class="symbol-detail" data-hotdoc-id="wpe_view_backend_interface.create">
+	<div>
+		<i><em><code>create</code></em></i>
+		()
+		–
+	</div>
+			<i>No description available</i>
+	</div>
+
+					
+<div class="symbol-detail" data-hotdoc-id="wpe_view_backend_interface.destroy">
+	<div>
+		<i><em><code>destroy</code></em></i>
+		()
+		–
+	</div>
+			<i>No description available</i>
+	</div>
+
+					
+<div class="symbol-detail" data-hotdoc-id="wpe_view_backend_interface.initialize">
+	<div>
+		<i><em><code>initialize</code></em></i>
+		()
+		–
+	</div>
+			<i>No description available</i>
+	</div>
+
+					
+<div class="symbol-detail" data-hotdoc-id="wpe_view_backend_interface.get_renderer_host_fd">
+	<div>
+		<i><em><code>get_renderer_host_fd</code></em></i>
+		()
+		–
+	</div>
+			<i>No description available</i>
+	</div>
+
+			</div>
+
+
+
+<hr>
+
+</div>
+
+
+            <h2 class="symbol_section">Enumerations</h2>
+                    
+
+<div class="base_symbol_container" data-hotdoc-tags="" id="wpe_view_activity_state">
+	
+
+
+
+<h3 data-hotdoc-id="wpe_view_activity_state">
+	<i>wpe_view_activity_state</i>
+</h3>
+
+
+<pre class="raw_code">
+enum wpe_view_activity_state {
+    wpe_view_activity_state_visible   = 1 &lt;&lt; 0,
+    wpe_view_activity_state_focused   = 1 &lt;&lt; 1,
+    wpe_view_activity_state_in_window = 1 &lt;&lt; 2
+};
+</pre>
+
+
+
+
+	<div class="members-container">
+		<h4>Members</h4>
+					
+<div class="symbol-detail" data-hotdoc-id="wpe_view_activity_state_visible">
+	<div>
+		<i><em><code>wpe_view_activity_state_visible</code></em></i>
+		(<span class="value">1</span>)
+		–
+	</div>
+			<i>No description available</i>
+	</div>
+
+					
+<div class="symbol-detail" data-hotdoc-id="wpe_view_activity_state_focused">
+	<div>
+		<i><em><code>wpe_view_activity_state_focused</code></em></i>
+		(<span class="value">2</span>)
+		–
+	</div>
+			<i>No description available</i>
+	</div>
+
+					
+<div class="symbol-detail" data-hotdoc-id="wpe_view_activity_state_in_window">
+	<div>
+		<i><em><code>wpe_view_activity_state_in_window</code></em></i>
+		(<span class="value">4</span>)
+		–
+	</div>
+			<i>No description available</i>
+	</div>
+
+			</div>
+
+
+
+<hr>
+
+</div>
+
+
+
+
+
+		
+	</div>
+	<div id="search_results">
+		<p>The results of the search are</p>
+	</div>
+	<div id="footer">
+		    
+
+	</div>
+</div>
+
+<div id="toc-column">
+	
+		<div class="edit-button">
+		
+
+	</div>
+		<div id="toc-wrapper">
+		<nav id="toc"></nav>
+	</div>
+</div>
+</div>
+</main>
+
+
+<script src="assets/js/navbar_offset_scroller.js"></script>
+</body>
+</html>

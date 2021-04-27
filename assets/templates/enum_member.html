@@ -1,0 +1,14 @@
+@require(link, detail, value)
+
+<div class="symbol-detail" data-hotdoc-id="@link.id_">
+	<div>
+		<i><em><code>@link.title</code></em></i>
+		(<span class="value">@value</span>)
+		–
+	</div>
+	@if detail:
+		@detail
+	@else:
+		<i>No description available</i>
+	@end
+</div>

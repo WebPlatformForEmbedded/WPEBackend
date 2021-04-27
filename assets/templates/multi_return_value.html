@@ -1,0 +1,31 @@
+@require(return_items)
+@if len(return_items) > 1:
+	<div class="return-values-container">
+		<p><b>Returns a tuple made of:</b></p>
+		@for item in return_items:
+		@item.detailed_description
+		@end
+	</div>
+@elif return_items:
+	<div class="return-values-container">
+		<div class="symbol-detail">
+			<div>
+				<b>Returns</b>
+				@if (return_items[0].formatted_link or return_items[0].extension_contents):
+					(
+					@return_items[0].formatted_link
+					@for name, ex in return_items[0].extension_contents.items():
+					@ex
+					@end
+					)
+				@end
+				–
+			</div>
+			@if return_items[0].formatted_doc:
+				@return_items[0].formatted_doc
+			@else:
+				<i>No description available</i>
+			@end
+		</div>
+	</div>
+@end

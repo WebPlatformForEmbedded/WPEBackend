@@ -1,0 +1,20 @@
+@require(name, detail, extra)
+
+<div class="symbol-detail">
+	<div>
+		<i><em><code>@name</code></em></i>
+		@if extra:
+			(
+			@for name, ex in extra.items():
+			@ex
+			@end
+			)
+		@end
+		–
+	</div>
+	@if detail:
+		@detail
+	@else:
+		<i>No description available</i>
+	@end
+</div>
