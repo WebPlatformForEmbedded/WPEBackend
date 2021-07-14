@@ -65,6 +65,9 @@ wpe_view_backend_destroy(struct wpe_view_backend* backend)
     backend->input_client = 0;
     backend->input_client_data = 0;
 
+    backend->fullscreen_client = 0;
+    backend->fullscreen_client_data = 0;
+
     backend->activity_state = 0;
 
     free(backend);
@@ -91,6 +94,13 @@ wpe_view_backend_set_input_client(struct wpe_view_backend* backend, const struct
 {
     backend->input_client = client;
     backend->input_client_data = client_data;
+}
+
+void
+wpe_view_backend_set_fullscreen_client(struct wpe_view_backend* backend, const struct wpe_view_backend_fullscreen_client* client, void* client_data)
+{
+    backend->fullscreen_client = client;
+    backend->fullscreen_client_data = client_data;
 }
 
 void
@@ -186,4 +196,32 @@ wpe_view_backend_dispatch_touch_event(struct wpe_view_backend* backend, struct w
 {
     if (backend->input_client)
         backend->input_client->handle_touch_event(backend->input_client_data, event);
+}
+
+void
+wpe_view_backend_set_fullscreen_handler(struct wpe_view_backend* backend, void (*handler)(void*, bool), void* data)
+{
+    backend->fullscreen_handler = handler;
+    backend->fullscreen_handler_data = data;
+}
+
+void
+wpe_view_backend_set_fullscreen(struct wpe_view_backend* backend, bool fullscreen)
+{
+    if (backend->fullscreen_handler)
+        backend->fullscreen_handler(backend->fullscreen_handler_data, fullscreen);
+}
+
+void
+wpe_view_backend_dispatch_request_enter_fullscreen(struct wpe_view_backend* backend)
+{
+    if (backend->fullscreen_client)
+        backend->fullscreen_client->request_enter_fullscreen(backend->fullscreen_client_data);
+}
+
+void
+wpe_view_backend_dispatch_request_exit_fullscreen(struct wpe_view_backend* backend)
+{
+    if (backend->fullscreen_client)
+        backend->fullscreen_client->request_exit_fullscreen(backend->fullscreen_client_data);
 }
