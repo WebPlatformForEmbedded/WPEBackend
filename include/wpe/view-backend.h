@@ -45,6 +45,7 @@
 extern "C" {
 #endif
 
+#include <stdbool.h>
 #include <stdint.h>
 
 struct wpe_view_backend;
@@ -56,6 +57,7 @@ struct wpe_input_touch_event;
 
 struct wpe_view_backend_client;
 struct wpe_view_backend_input_client;
+struct wpe_view_backend_fullscreen_client;
 
 struct wpe_view_backend_interface {
     void* (*create)(void*, struct wpe_view_backend*);
@@ -96,6 +98,14 @@ wpe_view_backend_set_backend_client(struct wpe_view_backend*, const struct wpe_v
 WPE_EXPORT
 void
 wpe_view_backend_set_input_client(struct wpe_view_backend*, const struct wpe_view_backend_input_client*, void*);
+
+WPE_EXPORT
+void
+wpe_view_backend_set_fullscreen_client(struct wpe_view_backend*, const struct wpe_view_backend_fullscreen_client*, void*);
+
+WPE_EXPORT
+void
+wpe_view_backend_set_fullscreen_handler(struct wpe_view_backend*, void (*handler)(void*, bool), void*);
 
 WPE_EXPORT
 void
@@ -178,6 +188,28 @@ wpe_view_backend_dispatch_axis_event(struct wpe_view_backend*, struct wpe_input_
 WPE_EXPORT
 void
 wpe_view_backend_dispatch_touch_event(struct wpe_view_backend*, struct wpe_input_touch_event*);
+
+struct wpe_view_backend_fullscreen_client {
+    void (*request_enter_fullscreen)(void*);
+    void (*request_exit_fullscreen)(void*);
+
+
+    /*< private >*/
+    void (*_wpe_reserved0)(void);
+};
+
+WPE_EXPORT
+void
+wpe_view_backend_set_fullscreen(struct wpe_view_backend*, bool);
+
+WPE_EXPORT
+void
+wpe_view_backend_dispatch_request_enter_fullscreen(struct wpe_view_backend*);
+
+WPE_EXPORT
+void
+wpe_view_backend_dispatch_request_exit_fullscreen(struct wpe_view_backend*);
+
 
 #ifdef __cplusplus
 }
